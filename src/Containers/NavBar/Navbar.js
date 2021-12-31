@@ -14,9 +14,9 @@ class Navbar extends React.Component {
     render() {
         return(
             <nav className="NavbarItems">
-                <h1 className='navbar-logo'>Nick's Garage <i className="fas fa-tools"></i></h1>
+                <Link to="/" className='navbar-logo'>Nick's Garage <i className="fas fa-tools" /></Link>
                 <div className="menu-icon" onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'} />
                 </div>
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
