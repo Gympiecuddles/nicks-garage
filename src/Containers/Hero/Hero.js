@@ -10,7 +10,7 @@ class Hero extends React.Component {
                 </video>
                 <h2>Nick's Garage Auto Repair</h2>
                 <p>Keeping you moving</p>
-                <Button className='btn' buttonStyle='btn--outline' buttonSize='btn--large'>Contact us</Button>
+                <Button className='btn' buttonStyle='btn--outline' buttonSize='btn--large'>Make an Appointment</Button>
             </section>
         )
     }

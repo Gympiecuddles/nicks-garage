@@ -1,8 +1,9 @@
 import React from 'react';
 import Navbar from './Containers/NavBar/Navbar';
-import Hero from './Containers/Hero/Hero';
-import Services from './Containers/Services/Services';
-import Products from './Containers/Pages/Products';
+import Home from './Containers/Pages/Home';
+import Services2 from './Containers/Pages/Services';
+import About from './Containers/Pages/About';
+import Contact from './Containers/Pages/Contact';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 
@@ -12,11 +13,11 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' exact  />
-          <Route path='/Products' exact component={Products} />
+          <Route path='/' element={<Home />} />
+          <Route path='/Services' element={<Services2 />} />
+          <Route path='/About' element={<About />} />
+          <Route path='/Contact' element={<Contact />} />
         </Routes>
-        <Hero />
-        <Services />
       </Router>
     </>
   );
