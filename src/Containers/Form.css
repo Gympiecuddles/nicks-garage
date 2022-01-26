@@ -1,0 +1,40 @@
+form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    height: 450px;
+    background-color: white;
+    font-size: 0.9em;
+}
+label {
+    align-self: flex-start;
+    margin-left: 11px;
+    margin-top: 10px;
+}
+input {
+    width: 250px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+.emailLabel:after  {
+    content:" *";
+    color: red;
+    
+}
+
+textarea {
+    width: 250px;
+    height: 120px;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+form > div > button {
+    width: 250px;
+    height: 25px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 550;
+}
