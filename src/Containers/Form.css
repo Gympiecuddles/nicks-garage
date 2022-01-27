@@ -16,6 +16,7 @@ input {
     width: 250px;
     height: 25px;
     margin-top: 10px;
+    font-size: 0.7rem;
 }
 
 .emailLabel:after  {
@@ -28,7 +29,7 @@ textarea {
     width: 250px;
     height: 120px;
     margin-top: 10px;
-    font-size: 0.9em;
+    font-size: 0.7rem;
 }
 form > div > button {
     width: 250px;
