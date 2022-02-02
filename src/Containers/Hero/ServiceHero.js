@@ -5,7 +5,7 @@ import './ServiceHero.css'
 class ServiceHero extends React.Component {
     render() {
         return (
-            <section className="ServiceHero">
+            <section className="ServiceHero" id='services'>
                 <h2>Services</h2>
                 <article>
                     <p><i className="fas fa-tools"/>GENERAL REPAIRS</p>

@@ -5,7 +5,7 @@ import './AboutHero.css'
 class AboutHero extends React.Component {
     render() {
         return (
-            <section className='AboutHero'>
+            <section className='AboutHero' id='about'>
                 <h2>About Us</h2>
                 <p>
                     Since established in 1989 we have been servicing cars here in Brooklyn, with thousands of satisfied 

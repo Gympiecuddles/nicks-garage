@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from '../Button';
-import { Link } from 'react-router-dom';
+import { Button } from '../../../../nicks-garage/src/Containers/Button';
+import { HashLink } from 'react-router-hash-link';
 import './Navbar.css';
 
 function Navbar() {
@@ -28,46 +28,56 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <HashLink smooth 
+          to={'/#home'} 
+          className='navbar-logo' 
+          onClick={closeMobileMenu}>
             Nick's Garage&nbsp;
             <i class='fas fa-wrench' />
-          </Link>
+          </HashLink>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <HashLink 
+              smooth 
+              to={'/#home'} 
+              className='nav-links' 
+              onClick={closeMobileMenu}>
                 Home
-              </Link>
+              </HashLink>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/services'
+              <HashLink
+                smooth
+                to={'/#services'}
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 Services
-              </Link>
+              </HashLink>
             </li>
             <li className='nav-item'>
-              <Link
-                to='/About'
+              <HashLink
+                smooth
+                to={'/#about'}
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
                 About Us
-              </Link>
+              </HashLink>
             </li>
 
             <li>
-              <Link
-                to='/Contact'
+              <HashLink
+                smooth
+                to={'/#contact'}
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
                 Contact
-              </Link>
+              </HashLink>
             </li>
           </ul>
           {button && <Button buttonStyle='btn--outline' buttonSize='btn--medium'>Contact</Button>}

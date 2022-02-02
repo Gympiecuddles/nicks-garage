@@ -1,24 +1,22 @@
 import React from 'react';
 import Navbar from './Containers/NavBar/Navbar';
-import Home from './Containers/Pages/Home';
-import Services2 from './Containers/Pages/Services';
-import About from './Containers/Pages/About';
-import Contact from './Containers/Pages/Contact';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Hero from './Containers/Hero/Hero';
+import Services2 from './Containers/Hero/ServiceHero';
+import AboutHero from './Containers/Hero/AboutHero';
+import Contact from './Containers/Hero/ContactHero';
+import { BrowserRouter} from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <Navbar />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/Services' element={<Services2 />} />
-          <Route path='/About' element={<About />} />
-          <Route path='/Contact' element={<Contact />} />
-        </Routes>
-      </Router>
+        <Hero />
+        <Services2 />
+        <AboutHero />
+        <Contact />
+      </BrowserRouter>
     </>
   );
 }

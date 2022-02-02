@@ -7,7 +7,7 @@ function ContactHero() {
     
 
     return (
-        <section>    
+        <section className='contactSection' id='contact'>    
             <article className='contactBox'>
                 <h2>FIND US</h2>
                 <div className='contactInfo'>

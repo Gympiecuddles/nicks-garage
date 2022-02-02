@@ -5,7 +5,7 @@ import { Button } from '../Button.js'
 class Hero extends React.Component {
     render() {
         return (
-            <section className="Hero">
+            <section className="Hero" id='home'>
                 <video src='/videos/mech.mp4' autoPlay loop muted>
                 </video>
                 <h2>Nick's Garage Auto Repair</h2>
