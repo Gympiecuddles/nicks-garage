@@ -1,6 +1,5 @@
 import React from 'react'
 import './ContactHero.css'
-import GoogleMap from '../Map.js'
 import Form from '../Form.js'
 
 function ContactHero() {
@@ -27,9 +26,6 @@ function ContactHero() {
                     </ul> 
                 </div>
                 <Form />
-            </article>
-            <article className='map'>
-                <GoogleMap />
             </article>
         </section>
 

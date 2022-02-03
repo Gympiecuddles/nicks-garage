@@ -41,7 +41,7 @@ class GoogleMap extends Component {
         return(        
             <Map
                 google= {this.props.google}
-                style= {{width:"100%", height: "40vh"}}
+                style= {{width:"100%", height: "480px"}}
                 zoom = {14}
                 initialCenter = {
                     {

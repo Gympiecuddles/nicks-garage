@@ -19,7 +19,6 @@ class AboutHero extends React.Component {
                     Bensonhurst. Our work is honest and professional, our fees are reasonable and high-quality service 
                     is always guaranteed.
                 </p>
-                <Button className='btn' buttonStyle='btn--primary' buttonSize='btn--lajrge'>Contact</Button>
             </section>
         )
     }

@@ -1,5 +1,5 @@
 .AboutHero {
-    height: 100vh;
+    height: 55vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -9,17 +9,91 @@
 }
 
 .AboutHero > h2 {
-    font-size: 5rem;
-    margin-top: 20vh;
+    font-size: 3rem;
+    margin-top: 5vh;
     text-align: center;    
 }
 
 .AboutHero > p {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     padding: 50px;
     margin: 50px;
     margin-top: 50px;
-    max-width: 100rem;
+    max-width: 60rem;
     text-align: center;
     border: 2px solid #3acbf7;
+}
+
+@media screen and (max-width: 1080px ) {
+    .AboutHero {
+        height: 42vh;
+    }
+    
+    .AboutHero > h2 {
+        font-size: 2.5rem;
+        margin-top: 3vh;   
+    }
+    
+    .AboutHero > p {
+        font-size: 1.1rem;
+        padding: 40px;
+        margin: 100px;
+        margin-top: 50px;
+        max-width: 50rem;
+    }
+}
+
+@media screen and (max-width: 900px ) {
+    .AboutHero {
+        height: 55vh;
+    }
+    
+    .AboutHero > h2 {
+        font-size: 2.5rem;
+        margin-top: 3vh;   
+    }
+    
+    .AboutHero > p {
+        font-size: 1.1rem;
+        padding: 40px;
+        margin: 100px;
+        margin-top: 50px;
+        max-width: 50rem;
+    }
+}
+
+@media screen and (max-width: 750px ) {
+    .AboutHero {
+        height: 60vh;
+    }
+    
+    .AboutHero > h2 {
+        font-size: 2.2rem;
+        margin-top: 2.2vh;  
+    }
+    
+    .AboutHero > p {
+        font-size: .9rem;
+        padding: 15px;
+        margin: 35px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 375px ) {
+    .AboutHero {
+        height: 80vh;
+    }
+    
+    .AboutHero > h2 {
+        font-size: 2.2rem;
+        margin-top: 2.2vh;  
+    }
+    
+    .AboutHero > p {
+        font-size: .9rem;
+        padding: 15px;
+        margin: 35px;
+        margin-top: 20px;
+    }
 }

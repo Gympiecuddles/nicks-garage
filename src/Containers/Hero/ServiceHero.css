@@ -1,5 +1,5 @@
 .ServiceHero {
-    height: 105vh;
+    height: 95vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -12,14 +12,23 @@
 
 .ServiceHero > h2 {
     color: #fff;
-    font-size: 80px;
-    margin-top: 15vh;
+    font-size: 45px;
+    margin-top: 8vh;
     text-align: center;
+}
+
+hr {
+    width: 35px;
+    padding: 1px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #fff;
 }
 
 .ServiceHero > article {
     display: grid;
-    margin: 60px;
+    margin: 15px;
+    margin-bottom: -100px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
 }
@@ -36,53 +45,74 @@
 }
 
 .ServiceHero > article > p > i{
-    padding: 20px;
-    font-size: 3rem;
+    padding: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 6rem;
 }
 
 h3 {
-    font-size: 2.8rem;
+    font-size: 30px;
     color: #fff;
 }
 
 ul {
     color: #fff;
-    padding: 50px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 ul > li {
-    padding: 10px;
+    padding: 2px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1080px) {
     .ServiceHero {
-        height: 120vh;
+        height: 105vh;
     }
 }
 
 @media screen and (max-width: 500px) {
     .ServiceHero {
-        height: 160vh;
-    }
-    
-    .ServiceHero > h2 {
-        font-size: 70px;
-        margin-top: 10vh;
+        height: 100vh;
     }
     
     .ServiceHero > article {
-        margin: 40px;
+        margin: 20px;
+        margin-bottom: -100px;
+    }
+
+    .ServiceHero > article > p {
+        padding: 8px;
+        font-size: .8rem;
+    }
+
+    .ServiceHero > article > p > i{
+        padding: 5px;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    ul > li {
+        padding: 0px;
+        font-size: .8rem;
     }
 }
 
 @media screen and (max-width: 375px) {
     .ServiceHero {
-        height: 170vh;
+        height: 115vh;
     }
     
     .ServiceHero > h2 {
-        font-size: 60px;
-        margin-top: 7vh;
+        margin-top: 5vh;
     }
     
     .ServiceHero > article {
@@ -95,12 +125,13 @@ ul > li {
     }
 
     .ServiceHero > article > p > i{
-        padding: 20px;
+        padding: 8px;
         font-size: 2.7rem;
     }
 
     h3 {
-        font-size: 2.3rem;
+        font-size: 1.5rem;
         margin-top: -100px;        
     }
 }
+

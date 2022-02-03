@@ -7,15 +7,17 @@ class ServiceHero extends React.Component {
         return (
             <section className="ServiceHero" id='services'>
                 <h2>Services</h2>
+                <hr/>
                 <article>
                     <p><i className="fas fa-tools"/>GENERAL REPAIRS</p>
                     <p><i className="fas fa-oil-can"/>OIL CHANGE</p>
                     <p><i className="far fa-clipboard"/>NYS INSPECTION</p>
-                    <p><i className="fas fa-bolt"/>BATTERY, ALTERNATOR, STARTER REPLACEMENT</p>
+                    <p><i className="fas fa-bolt"/>BATTERY, ALTERNATOR,<br/> STARTER REPLACEMENT</p>
                     <p><i className="fas fa-wind"/>A/C REPAIRS</p>
                     <p><i className="fas fa-cogs"/>ENGINE WORK</p>
                 </article>
                 <h3>MORE SERVICES</h3>
+                <hr/>
                 <ul>
                     <li>AUTOMOTIVE COLLISION REPAIR</li>
                     <li>AUTOMOTIVE DIAGNOSIS</li>
