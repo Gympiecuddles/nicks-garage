@@ -17,7 +17,7 @@
     text-align: center;
 }
 
-hr {
+.ServiceHero > hr {
     width: 35px;
     padding: 1px;
     margin-top: 20px;
@@ -51,25 +51,40 @@ hr {
     font-size: 6rem;
 }
 
-h3 {
+.ServiceHero > h3 {
     font-size: 30px;
     color: #fff;
 }
 
-ul {
+.ServiceHero > ul {
     color: #fff;
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 30px;
 }
 
-ul > li {
+.ServiceHero > ul > li {
     padding: 2px;
 }
 
 @media screen and (max-width: 1080px) {
     .ServiceHero {
         height: 105vh;
+    }
+    .ServiceHero > hr {
+        margin-top: 2.5vh;
+        margin-bottom: 5vh;
+    }
+    .ServiceHero > article {
+        margin-bottom: -50px;
+    }
+    .ServiceHero > ul {
+        padding: 10px;
+        margin-top: 8px;
+        margin-bottom: 7vh;
+    }
+    .ServiceHero > ul > li {
+        padding: 5px;
     }
 }
 

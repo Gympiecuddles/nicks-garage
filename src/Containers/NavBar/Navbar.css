@@ -43,7 +43,6 @@
     text-align: center;
     width: 60vw;
     justify-content: end;
-    margin-right: 2rem;
   }
   
   .nav-item {
@@ -118,7 +117,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      transform: translate(25%, 50%);
+      transform: translate(10%, 50%);
     }
   
     .menu-icon {

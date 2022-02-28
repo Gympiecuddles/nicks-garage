@@ -28,10 +28,12 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <HashLink smooth 
+          <HashLink
           to={'/#home'} 
           className='navbar-logo' 
-          onClick={closeMobileMenu}>
+          onClick={closeMobileMenu}
+          scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+          >
             Nick's Garage&nbsp;
             <i class='fas fa-wrench' />
           </HashLink>
@@ -41,10 +43,11 @@ function Navbar() {
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <HashLink 
-              smooth 
               to={'/#home'} 
               className='nav-links' 
-              onClick={closeMobileMenu}>
+              onClick={closeMobileMenu}
+              scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+              >
                 Home
               </HashLink>
             </li>
@@ -60,10 +63,10 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <HashLink
-                smooth
                 to={'/#about'}
                 className='nav-links'
                 onClick={closeMobileMenu}
+                scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
               >
                 About Us
               </HashLink>
@@ -71,10 +74,10 @@ function Navbar() {
 
             <li>
               <HashLink
-                smooth
                 to={'/#contact'}
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
+                scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
               >
                 Contact
               </HashLink>

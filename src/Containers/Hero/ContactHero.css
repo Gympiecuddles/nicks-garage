@@ -6,6 +6,8 @@
     height: 800px;
     width: 100%;
     background-color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 .contactBox {
@@ -72,3 +74,16 @@ form {
     grid-column: 2 / 3;
     grid-row: 2 / 4;
 }
+
+@media screen and (max-width: 1080px) {
+   
+}
+
+@media screen and (max-width: 500px) {
+  
+}
+
+@media screen and (max-width: 375px) {
+    
+}
+

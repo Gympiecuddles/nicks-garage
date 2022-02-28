@@ -25,7 +25,7 @@ export const Button = ({
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]
 
     return (
-        <HashLink smooth to={'/#contact'} className='btn-mobile'>
+        <HashLink to={'/#contact'} className='btn-mobile' scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center'})}>
             <button 
             className={`btn ${checkButtonStyle} ${checkButtonSize}`} 
             onClick={onClick}
