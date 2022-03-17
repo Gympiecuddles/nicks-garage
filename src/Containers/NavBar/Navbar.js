@@ -66,7 +66,7 @@ function Navbar() {
                 to={'/#about'}
                 className='nav-links'
                 onClick={closeMobileMenu}
-                scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'center' })}
+                scroll={(el) => el.scrollIntoView({ behavior: 'smooth', block: 'end' })}
               >
                 About Us
               </HashLink>

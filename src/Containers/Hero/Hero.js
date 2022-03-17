@@ -8,8 +8,8 @@ class Hero extends React.Component {
             <section className="Hero" id='home'>
                 <video src='/videos/mech.mp4' autoPlay loop muted>
                 </video>
-                <h2>Nick's Garage Auto Repair</h2>
-                <p>Keeping you moving</p>
+                <h2>Nick's Garage</h2>
+                <p>Auto Services</p>
                 <Button className='btn' buttonStyle='btn--outline' buttonSize='btn--large'>Make an Appointment</Button>
             </section>
         )

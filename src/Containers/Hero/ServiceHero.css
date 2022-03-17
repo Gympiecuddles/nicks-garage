@@ -44,7 +44,7 @@
     text-align: center;
 }
 
-.ServiceHero > article > p > i{
+.ServiceHero > .FAwesome{
     padding: 30px;
     margin-left: 25px;
     margin-right: 25px;
