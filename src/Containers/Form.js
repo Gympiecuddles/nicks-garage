@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import './Form.css'
+import React, { Component } from 'react';
+import kwesforms from 'kwesforms';
+import './Form.css';
 
 export class Form extends Component {
 
@@ -12,6 +13,10 @@ export class Form extends Component {
              email: '',
              tel: ''
         }
+    }
+
+    componentDidMount() {
+        kwesforms.init();
     }
     
     handleUsernameChange = event => {
@@ -39,43 +44,60 @@ export class Form extends Component {
     }
 
     handleSubmit = event => {
-        alert(`${this.state.username} ${this.state.comments}`)
         event.preventDefault()
         console.log(this.state);
     }
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit} action='contactform.php' method='post'>
-                <div>
-                    <label>Enter Your Name</label>
-                    <input 
-                    type='text' 
-                    value={this.state.username} 
-                    onChange={this.handleUsernameChange} 
-                    placeholder='Name'
-                    />
-                    <label className='emailLabel'>Enter Your Email</label>
-                    <input 
-                    type='email'
-                    value={this.state.email}
-                    onChange={this.handleEmailChange}
-                    placeholder='Email'
-                    required/>
-                    <label>Phone</label>
-                    <input 
-                    type='tel'
-                    value={this.state.tel}
-                    onChange={this.handleTelChange}
-                    placeholder='Phone'/>
-                    <label>Enter Your Message Here</label>
-                    <textarea 
-                    value={this.state.comments} 
-                    onChange={this.handleCommentsChange}
-                    placeholder='Message' 
-                    />
-                    <button type='submit'>Submit</button>
-                </div>
+            <form 
+            mode='test' 
+            className='kwes-form' 
+            onSubmit={this.handleSubmit} 
+            action='https://kwesforms.com/api/foreign/forms/jMrus4f6FLYhN2FetfT3' 
+            method='post'>
+                <label for='name'>Enter Your Name</label>
+                <input 
+                type='text' 
+                name='name'
+                rules='required'
+                value={this.state.username} 
+                onChange={this.handleUsernameChange} 
+                placeholder='Name'
+                />
+                <label 
+                className='emailLabel'
+                for='email'
+                >Email</label>
+                <input 
+                type='email'
+                name='email'
+                rules='required|email'
+                value={this.state.email}
+                onChange={this.handleEmailChange}
+                placeholder='Email'
+                required/>
+                <label
+                for='phone'
+                >Phone</label>
+                <input 
+                type='tel'
+                name='phone'
+                rules='required'
+                value={this.state.tel}
+                onChange={this.handleTelChange}
+                placeholder='Phone'/>
+                <label
+                for='text'
+                >Message</label>
+                <textarea 
+                name='text'
+                rules='required'
+                value={this.state.comments} 
+                onChange={this.handleCommentsChange}
+                placeholder='Message' 
+                />
+                <button type='submit'>Submit</button>   
             </form>
         )
     }

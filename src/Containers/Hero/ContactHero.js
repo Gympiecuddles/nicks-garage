@@ -12,6 +12,7 @@ function ContactHero() {
                 <div className='contactInfo'>
                     <a href="https://goo.gl/maps/mYUFn9T3AVZG9AWS7" 
                     target="_blank"
+                    rel='noreferrer'
                     >861 N Military Trl<br/> West Palm Beach, FL 33415
                     </a>
                     <br/><br/>

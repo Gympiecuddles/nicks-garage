@@ -1,5 +1,4 @@
 import React from 'react'
-import { Button } from '../Button'
 import './AboutHero.css'
 
 class AboutHero extends React.Component {

@@ -24,7 +24,7 @@ class ServiceHero extends React.Component {
                 <ul>
                     <li>CUSTOM INSTALATIONS</li>
                     <li>CAR AUDIO</li>
-                    <li>LIGHTING (LED LIGHTS OR HID??????)</li>
+                    <li>LIGHTING (LED LIGHTS OR HID)</li>
                     <li>EXHAUSTS</li>
                     <li>CUSTOM SUSPENSION</li>
                 </ul>

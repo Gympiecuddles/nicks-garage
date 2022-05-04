@@ -62,7 +62,7 @@ class GoogleMap extends Component {
                     visible={this.state.showingInfoWindow}
                     onClose={this.windowClosed}>
                     <div>
-                        <h1>Nick's Garage <br/><a href='https://goo.gl/maps/Ysy6XayKwLUxsawu6' target="_blank">Directions</a></h1>
+                        <h1>Nick's Garage <br/><a href='https://goo.gl/maps/Ysy6XayKwLUxsawu6' target="_blank" rel="noreferrer">Directions</a></h1>
                     </div>
                 </InfoWindow>
             </Map>
